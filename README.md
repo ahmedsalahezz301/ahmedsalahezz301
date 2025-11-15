@@ -55,6 +55,8 @@ I'm Ahmed Salah, a Front-End Developer passionate about building clean, fast, an
 
 ## 📬 Contact Me
 - 📩 Telegram: [Abo_ezz_22](https://t.me/Abo_ezz_22)
+- 📞 Phone: 01273320611
+- 📧 Email: ahmedsalahezz301@gmail.com
 - 🌐 GitHub Profile
 
 > ✨ Always learning. Always building. Always improving.
