@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Salah - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16">
+            <div class="flex justify-between items-center h-full">
+                <div class="flex-shrink-0">
+                    <span class="text-xl font-bold text-teal-600">Ahmed Salah</span>
+                </div>
+                <div class="hidden md:block h-full">
+                    <div class="flex items-center space-x-1 h-full">
+                        <a href="#home"
+                            class="nav-link px-4 py-2 h-full flex items-center text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors duration-300">Home</a>
+                        <a href="#about"
+                            class="nav-link px-4 py-2 h-full flex items-center text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors duration-300">About</a>
+                        <a href="#education"
+                            class="nav-link px-4 py-2 h-full flex items-center text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors duration-300">Education</a>
+                        <a href="#skills"
+                            class="nav-link px-4 py-2 h-full flex items-center text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors duration-300">Skills</a>
+                        <a href="#projects"
+                            class="nav-link px-4 py-2 h-full flex items-center text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors duration-300">Projects</a>
+                        <a href="#contact"
+                            class="nav-link px-4 py-2 h-full flex items-center text-sm font-medium text-gray-700 hover:text-teal-600 transition-colors duration-300">Contact</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" id="mobile-menu-button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-indigo-600 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
+                <a href="#home"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600">Home</a>
+                <a href="#about"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600">About</a>
+                <a href="#education"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600">Education</a>
+                <a href="#skills"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600">Skills</a>
+                <a href="#projects"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600">Projects</a>
+                <a href="#contact"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+        <!-- Impressive Animated Background -->
+        <div class="absolute inset-0 z-0">
+            <!-- Main Gradient Background -->
+            <div class="absolute inset-0 bg-gradient-to-br from-teal-50 via-cyan-50 to-teal-100"></div>
+
+            <!-- Overlay Pattern -->
+            <div class="absolute inset-0 opacity-40"
+                style="background-image: radial-gradient(circle at 2px 2px, rgba(13, 148, 136, 0.15) 1px, transparent 0); background-size: 40px 40px;">
+            </div>
+
+            <!-- Gradient Orbs -->
+            <div
+                class="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-teal-400/30 to-cyan-300/30 rounded-full blur-3xl animate-pulse">
+            </div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-teal-600/30 to-teal-800/30 rounded-full blur-3xl animate-pulse"
+                style="animation-delay: 1s;"></div>
+            <div class="absolute top-1/2 right-1/4 w-64 h-64 bg-gradient-to-br from-cyan-400/20 to-teal-500/20 rounded-full blur-2xl animate-pulse"
+                style="animation-delay: 2s;"></div>
+
+            <!-- Animated shapes -->
+            <div class="shape-1"></div>
+            <div class="shape-2"></div>
+            <div class="shape-3"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
+                <!-- Text Content - Left Side -->
+                <div class="flex-1 text-center md:text-left">
+                    <h1 class="text-5xl md:text-7xl font-bold mb-4 text-gray-900" data-aos="fade-up">Ahmed Salah</h1>
+                    <h2 class="text-2xl md:text-4xl font-light mb-8 text-teal-700" data-aos="fade-up"
+                        data-aos-delay="100">Front-End Developer</h2>
+                    <div class="flex flex-col sm:flex-row gap-4 mt-12 justify-center md:justify-start"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <a href="#contact"
+                            class="px-8 py-4 bg-gray-500 text-white rounded-full font-semibold hover:bg-gray-600 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl">
+                            <i class="fas fa-paper-plane"></i> Get In Touch
+                        </a>
+                        <a href="#projects"
+                            class="px-8 py-4 border-2 border-teal-700 text-teal-800 rounded-full font-semibold hover:bg-teal-700 hover:text-teal-50 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 bg-white/50 backdrop-blur-sm">
+                            <i class="fas fa-code"></i> View My Work
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Image - Right Side -->
+                <div class="flex-1 flex justify-center md:justify-end">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80" data-aos="fade-left">
+                        <!-- Decorative rings -->
+                        <div class="absolute inset-0 rounded-full border-4 border-teal-300/50 animate-ping"
+                            style="animation-duration: 3s;"></div>
+                        <div class="absolute inset-0 rounded-full border-2 border-teal-400/30 animate-pulse"></div>
+
+                        <!-- Profile Image -->
+                        <div
+                            class="relative w-full h-full overflow-hidden rounded-full border-4 border-teal-300 shadow-2xl transform transition-all duration-700 hover:scale-105 bg-gradient-to-br from-teal-200 to-teal-400 p-1">
+                            <img src="images/me.jpg" alt="Ahmed Salah" class="w-full h-full object-cover rounded-full">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">About Me</h2>
+            <div class="max-w-4xl mx-auto">
+                <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                    Hello! I'm Ahmed Salah, a passionate Front-End Developer with a strong foundation in web
+                    development. I specialize in creating responsive and user-friendly web applications using modern
+                    technologies.
+                </p>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    With a keen eye for design and a commitment to writing clean, efficient code, I strive to create
+                    seamless user experiences that make a lasting impression. I'm constantly learning and staying
+                    up-to-date with the latest industry trends and best practices.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Education</h2>
+            <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-8">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/3 text-center md:text-left mb-6 md:mb-0">
+                        <h3 class="text-2xl font-bold text-indigo-600">Higher Technological Institute (HTI)</h3>
+                        <p class="text-gray-600">Graduated: May 2025</p>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h4 class="text-xl font-semibold text-gray-800">Bachelor's in Computer Science</h4>
+                        <p class="text-gray-600 mb-4">GPA: 3.11/4.0</p>
+                        <p class="text-gray-700">
+                            During my time at HTI, I gained a solid foundation in computer science principles,
+                            programming languages, and software development methodologies. My coursework included data
+                            structures, algorithms, web development, and database management.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-6">My Skills</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Here are the technologies and skills I work
+                with</p>
+
+            <div class="max-w-6xl mx-auto">
+                <!-- Technical Skills -->
+                <div class="mb-16" data-aos="fade-up">
+                    <h3 class="text-2xl font-bold text-teal-600 mb-8 text-center flex items-center justify-center">
+                        <i class="fas fa-code text-teal-500 mr-3"></i>
+                        Technical Skills
+                    </h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                        <div
+                            class="skill-item p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 text-center">
+                            <div
+                                class="w-16 h-16 mx-auto mb-4 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 text-2xl">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-800">HTML5</h4>
+                            <p class="text-sm text-gray-500 mt-1">Advanced</p>
+                        </div>
+                        <div
+                            class="skill-item p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 text-center">
+                            <div
+                                class="w-16 h-16 mx-auto mb-4 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 text-2xl">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-800">CSS3</h4>
+                            <p class="text-sm text-gray-500 mt-1">Advanced</p>
+                        </div>
+                        <div
+                            class="skill-item p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 text-center">
+                            <div
+                                class="w-16 h-16 mx-auto mb-4 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 text-2xl">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-800">JavaScript</h4>
+                            <p class="text-sm text-gray-500 mt-1">Intermediate</p>
+                        </div>
+                        <div
+                            class="skill-item p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 text-center">
+                            <div
+                                class="w-16 h-16 mx-auto mb-4 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 text-2xl">
+                                <i class="fab fa-bootstrap"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-800">Bootstrap</h4>
+                            <p class="text-sm text-gray-500 mt-1">Advanced</p>
+                        </div>
+                        <div
+                            class="skill-item p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 text-center">
+                            <div
+                                class="w-16 h-16 mx-auto mb-4 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 text-2xl">
+                                <i class="fas fa-wind"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-800">Tailwind CSS</h4>
+                            <p class="text-sm text-gray-500 mt-1">Advanced</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-2xl font-bold text-teal-600 mb-8 text-center flex items-center justify-center">
+                        <i class="fas fa-users text-teal-500 mr-3"></i>
+                        Soft Skills
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div
+                            class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 text-center">
+                            <div
+                                class="w-16 h-16 mx-auto mb-4 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 text-2xl">
+                                <i class="fas fa-people-arrows"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-800">Teamwork & Collaboration</h4>
+                        </div>
+                        <div
+                            class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 text-center">
+                            <div
+                                class="w-16 h-16 mx-auto mb-4 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 text-2xl">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-800">Problem-solving</h4>
+                        </div>
+                        <div
+                            class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 text-center">
+                            <div
+                                class="w-16 h-16 mx-auto mb-4 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 text-2xl">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-800">Time Management</h4>
+                        </div>
+                        <div
+                            class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 text-center">
+                            <div
+                                class="w-16 h-16 mx-auto mb-4 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 text-2xl">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-800">Adaptability</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">My Projects</h2>
+            <div class="relative max-w-4xl mx-auto">
+                <div class="overflow-hidden">
+                    <div id="project-slider" class="flex transition-transform duration-300 ease-in-out">
+                        
+                        <!-- Project 1 -->
+                        <div class="project-slide w-full flex-shrink-0 px-4">
+                            <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                                <div class="h-64 bg-gray-200 overflow-hidden">
+                                    <img src="images/Screenshot 2025-11-17 233611.png" alt="E-commerce Website" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-2xl font-bold text-gray-800 mb-2">E-commerce Website</h3>
+                                    <p class="text-gray-600 mb-4">A fully responsive e-commerce website built with HTML,
+                                        CSS, and JavaScript. Features include product filtering, shopping cart
+                                        functionality, and a clean, modern design.</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span
+                                            class="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm font-medium rounded-full">HTML5</span>
+                                        <span
+                                            class="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm font-medium rounded-full">CSS3</span>
+                                        <span
+                                            class="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm font-medium rounded-full">Bootstrap5</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project 2 -->
+                        <div class="project-slide w-full flex-shrink-0 px-4">
+                            <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                                <div class="h-64 bg-gray-200 overflow-hidden">
+                                    <img src="images/Screenshot 2025-11-17 234136.png" alt="Task Management App" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Task Management App</h3>
+                                    <p class="text-gray-600 mb-4">A task management application that helps users
+                                        organize their daily tasks. Built with modern web technologies for a seamless
+                                        user experience.</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span
+                                            class="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm font-medium rounded-full">HTML5</span>
+                                        <span
+                                            class="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm font-medium rounded-full">CSS3</span>
+                                        <span
+                                            class="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm font-medium rounded-full">Tailwind
+                                            CSS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project 3 -->
+                        <div class="project-slide w-full flex-shrink-0 px-4">
+                            <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                                <div class="h-64 bg-gray-200 overflow-hidden">
+                                    <img src="images/Screenshot 2025-11-17 234726.png" alt="Portfolio Website" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Portfolio Website</h3>
+                                    <p class="text-gray-600 mb-4">A personal portfolio website showcasing my projects
+                                        and skills. Built with a focus on performance, accessibility, and responsive
+                                        design.</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span
+                                            class="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm font-medium rounded-full">HTML5</span>
+                                        <span
+                                            class="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm font-medium rounded-full">CSS3</span>
+                                        <span
+                                            class="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm font-medium rounded-full">JavaScript</span>
+                                        <span
+                                            class="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm font-medium rounded-full">Tailwind
+                                            CSS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <button id="prev-project"
+                    class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 focus:outline-none">
+                    <i class="fas fa-chevron-left text-indigo-600"></i>
+                </button>
+                <button id="next-project"
+                    class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 focus:outline-none">
+                    <i class="fas fa-chevron-right text-indigo-600"></i>
+                </button>
+                <div class="flex justify-center mt-6 space-x-2">
+                    <button class="w-3 h-3 rounded-full bg-indigo-300 project-dot" data-index="0"></button>
+                    <button class="w-3 h-3 rounded-full bg-indigo-100 project-dot" data-index="1"></button>
+                    <button class="w-3 h-3 rounded-full bg-indigo-100 project-dot" data-index="2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Get In Touch</h2>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-white">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-white text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-white">Email</h4>
+                                <a href="mailto:ahmedsalahezz301@gmail.com"
+                                    class="text-white hover:text-teal-400 transition">ahmedsalahezz301@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone-alt text-white text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-white">Phone</h4>
+                                <a href="tel:+201273320611" class="text-white hover:text-teal-400 transition">+201273320611</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-white text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-white">Location</h4>
+                                <p class="text-white">Cairo, Egypt</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="text-lg font-semibold mb-4 text-white">Connect with me</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://www.linkedin.com/in/ahmed-salah-1282a2381/" target="_blank"
+                                class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-600 transition text-white border border-gray-700">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://x.com/Killua19_9" target="_blank"
+                                class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-600 transition text-white border border-gray-700">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.facebook.com/ahmedsalah.ezx" target="_blank"
+                                class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-600 transition text-white border border-gray-700">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-white mb-1">Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-2 rounded-md bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-white mb-1">Email</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-2 rounded-md bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-white mb-1">Subject</label>
+                            <input type="text" id="subject" name="subject"
+                                class="w-full px-4 py-2 rounded-md bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-white mb-1">Message</label>
+                            <textarea id="message" name="message" rows="4" required
+                                class="w-full px-4 py-2 rounded-md bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-teal-600 text-white py-2 px-6 rounded-md font-semibold hover:bg-teal-700 transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; <span id="current-year"></span> Ahmed Salah. All rights reserved.</p>
+            <p class="mt-2 text-sm text-gray-400">Designed & Built with <i class="fas fa-heart text-red-500"></i> by
+                Ahmed Salah</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top"
+        class="fixed bottom-8 right-8 bg-teal-600 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-teal-700">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            easing: 'ease-in-out',
+            offset: 100
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
